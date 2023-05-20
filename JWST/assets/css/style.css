@@ -1,0 +1,294 @@
+html {
+  background-color: white;
+  color: #212121;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  display: block;
+  color: #212121;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: 'Bruno Ace', cursive;
+}
+
+nav ul li a:hover {
+  background-color: #a1a1a1;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 30vh;
+  color: white;
+}
+
+.bg {
+  width: 100%;
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index:-1;
+  filter: brightness(50%);
+}
+
+h2 {
+  text-align: center;
+}
+
+#alcim{
+  font-size: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+  text-align: center;
+}
+
+#elso {
+  font-size: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #212121;
+  text-align: justify;
+}
+
+#masodik {
+  font-size: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+}
+
+#harmadik {
+  font-size: 20px;
+  margin-right: 210px;
+  text-align: justify;
+  margin-left: 10%;
+}
+
+ol {
+  font-size: 26px;
+}
+
+li {
+  font-size: 25px;
+  margin-left: 10%;
+}
+
+#physics{
+  position: relative;
+  align-items: center;
+  padding-top: 50vh;
+}
+
+/*  H I S T O RY */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.gomb {
+  border-radius: 15px;
+  background-color: #212121;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 500px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.gomb span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.gomb span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.gomb:hover span {
+  padding-right: 25px;
+}
+
+.gomb:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*  F O O T E R  */
+footer {
+  background-color: #212121;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.social-buttons a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  color: #fff;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.facebook-button {
+  background-color: #3b5998;
+}
+
+.instagram-button {
+  background-color: #c13584;
+}
+
+.twitter-button {
+  background-color: #1da1f2;
+}
+
+.youtube-button {
+  background-color: #c4302b;
+}
+
+.fab {
+  padding: 13px;
+}
+
+.social-buttons a:hover {
+  transform: scale(1.2);
+}
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  transform: scale(1.1);
+}
+
+.footer-text {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#story {
+  display: block;
+}
+
+button {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#okay {
+  background-color: rgb(6, 207, 6);
+}
+
+#dont {
+  background-color: rgb(206, 0, 0);
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  box-sizing: border-box;
+}
+
+#developement, #construction, #challenges, #testings, #launch, #present, #technical, #predecessors {
+  position: relative;
+  align-items: center;
+  padding-top: 15vh;
+}
+
+.map{
+  text-align: center;
+  padding-right: 10%;
+}
